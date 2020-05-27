@@ -9,8 +9,12 @@ while target != 'end':
     count += 1
     total += int(target)
     target = input("다음 숫자를 입력해주세요.\n입력을 끝내려면 'end'를 입력해주세요.\n")
+    
+# 평균 구하는 함수 정의
+def avg(total, count):
+    avg = total / count
+    return avg
 
 # 입력이 종료된 숫자들의 합으로 평균 구하기
 if target == 'end':
-    avg = total / count
-    print("입력하신 숫자들의 평균은 %f입니다." % avg)
+    print("입력하신 숫자들의 평균은 %f입니다." % avg(total, count))
